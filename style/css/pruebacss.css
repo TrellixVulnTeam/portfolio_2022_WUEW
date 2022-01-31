@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* VARIEBLES */
 /* VARIEBLES */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 600px) {
   .alineacion_h {
     display: none; }
   .divisor2 {
@@ -846,7 +846,7 @@ footer {
   margin-right: auto;
   width: 100vw; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+@media only screen and (max-width: 600px) {
   h2 {
     font-size: 3.5rem;
     line-height: 1.3; }
