@@ -12,11 +12,11 @@ body{
     "divisor2 header header header main"
     "divisor2 nada deslizar nada_derecho main"
     "divisor3 espacio_blanco espacio_blanco espacio_blanco espacio_negro"
-    "cruz espacio titulo espacio2 espacio_negro"
-    "divisor4 sub_titulo sub_titulo sub_titulo espacio_negro"
+    "cruz titulo titulo titulo espacio_negro"
+    
     "divisor4 espacio_blanco2 espacio_blanco2 espacio_blanco2 espacio_negro";
 
-  grid-template-rows:  6fr  1fr 2fr 6fr  3fr 1fr 1fr 3fr;
+  grid-template-rows:  5fr  1fr 2fr 6fr  3fr 1fr 3fr;
   grid-template-columns: 1fr 3fr 2fr 3fr 1fr ;
   height: 100vh;
   margin: 0;

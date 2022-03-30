@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* VARIEBLES */
 /* VARIEBLES */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .alineacion_h {
     display: none; }
   .divisor2 {
@@ -35,6 +35,7 @@
 /* GENERAL */
 body {
   font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   line-height: normal;
   text-decoration: none; }
 
@@ -55,10 +56,26 @@ h1 {
   text-align: center; }
 
 h2 {
-  color: #7CC3C6;
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 2rem;
-  font-family: 'Megant', sans-serif; }
+  margin-bottom: 0%;
+  color: white;
+  text-align: center; }
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px; }
+
+p {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 1rem; }
 
 a {
   cursor: none; }
@@ -265,6 +282,7 @@ nav {
 
 .banner_inicio_logo {
   display: block;
+  padding: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 30%; }
@@ -272,11 +290,20 @@ nav {
 .banner_inicio_texto {
   text-align: center;
   color: white;
-  font-family: 'Megant', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
 .banner_inicio_texto h2 {
   font-size: 80%; }
+
+.contactame {
+  text-decoration: none;
+  color: white;
+  text-decoration: underline; }
+
+.contactame:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline; }
 
 /* INICIO REDES SOCIALES */
 a svg:hover #linkedin,
@@ -336,17 +363,13 @@ a svg:hover #dribble {
 .proyectos_titulo {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-
-.proyectos_titulo h2 {
-  font-family: 'Megant', sans-serif;
-  margin-bottom: 0%;
-  color: white;
-  text-align: center; }
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+  text-align: left; }
 
 .proyectos_texto {
   text-align: center;
-  padding-top: 1%;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
@@ -386,7 +409,8 @@ a svg:hover #dribble {
   position: absolute;
   top: 90%;
   left: 50%;
-  font-family: 'DIN', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -445,30 +469,21 @@ a svg:hover #dribble {
   background-color: black;
   padding-bottom: 10%; }
   .servicios h2 {
-    font-family: 'Megant', sans-serif;
     padding-top: 5%;
-    color: white;
-    margin-bottom: 2%;
-    text-align: center; }
+    margin-bottom: 2%; }
 
 .tabla {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: flex-start; }
 
 .tabla_servicio1 {
   display: flex;
   flex-direction: column;
   width: 17vw;
   margin: 2%; }
-  .tabla_servicio1 h3 {
-    color: white;
-    text-align: center; }
-  .tabla_servicio1 p {
-    color: white;
-    font-weight: 100;
-    text-align: center; }
   .tabla_servicio1 img {
     display: block;
     margin-left: auto;
@@ -502,10 +517,12 @@ th {
 
 .yo h2 {
   text-align: left;
-  color: white; }
+  color: white;
+  margin-bottom: 10px; }
 
 .yo p {
-  color: white; }
+  color: white;
+  text-align: left; }
 
 .yo_info {
   width: 66%;
@@ -563,7 +580,8 @@ th {
 
 .formulario h2 {
   text-align: left;
-  margin-bottom: 10%; }
+  margin-bottom: 10%;
+  color: #7CC3C6; }
 
 label {
   color: #7CC3C6;
@@ -591,6 +609,7 @@ input[type=submit]:hover {
 footer {
   background-color: black;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -601,9 +620,13 @@ footer {
   display: block;
   display: flex;
   align-items: center; }
+  .footer_logo img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 50px; }
 
 .red_social_footer {
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: white;
   margin-left: 10px;
   margin-right: 10px; }
@@ -848,10 +871,11 @@ footer {
 
 @media only screen and (max-width: 600px) {
   h2 {
-    font-size: 3.5rem;
-    line-height: 1.3; }
+    font-size: 1.5rem !important; }
+  h3 {
+    font-size: 1.5rem; }
   p {
-    font-size: 2rem !important; }
+    font-size: 1rem; }
   .nav-trigger {
     position: fixed;
     z-index: 4;
@@ -896,7 +920,7 @@ footer {
   .banner_inicio_logo {
     width: 100%; }
   .proyectos_texto p {
-    font-size: 2rem !important; }
+    font-size: 1rem !important; }
   .Proyecto_item {
     position: relative;
     width: 100vw; }
@@ -905,13 +929,12 @@ footer {
   .tabla_servicio1 img {
     width: 60%;
     height: 60%; }
-  .tabla_servicio1 h3 {
-    font-size: 2rem !important; }
   .boton {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .yo {
     display: flex;
-    flex-direction: column !important; }
+    flex-direction: column !important;
+    height: 75vh; }
   .yo_texto {
     padding-left: 0%;
     width: 80% !important; }
@@ -923,9 +946,12 @@ footer {
   .yo_info {
     width: 100%;
     flex-direction: column !important;
-    padding-top: 15%; }
+    padding-top: 15%;
+    height: 80vh !important; }
   .yo_foto {
     display: none !important;
     height: 0% !important; }
   .yo_cv img {
-    margin-top: 15%; } }
+    margin-top: 15%; }
+  .red_social_footer {
+    font-size: 2rem; } }
