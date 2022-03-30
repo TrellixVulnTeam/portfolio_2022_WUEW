@@ -876,6 +876,11 @@ footer {
     font-size: 1.5rem; }
   p {
     font-size: 1rem; }
+  .container {
+    background-image: url("../../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1500px !important; }
   .nav-trigger {
     position: fixed;
     z-index: 4;

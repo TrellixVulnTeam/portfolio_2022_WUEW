@@ -26,7 +26,7 @@ body{
   background-image: url("../../img/fondo.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height: 140vh !important;
+  height: 140vh ;
 }
 
 #main{
